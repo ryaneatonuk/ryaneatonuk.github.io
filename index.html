@@ -1,105 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ryan Eaton — Communication & Tech Support</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background-color: #80cbc4;
-      color: #222;
-      line-height: 1.5;
-    }
-    header {
-      padding-top: 10px; /* pushed name closer to top */
-      padding-bottom: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #000;
-    }
-    .subtitle {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #00796b; /* darker cyan/green */
-      margin-top: 6px;
-    }
-    section {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      background: #ffffffdd;
-      padding: 20px 25px;
-      border-radius: 6px;
-      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-    }
-    section h2 {
-      font-size: 1.3rem; /* same as subtitle */
-      color: #00796b;
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #444;
-      padding: 15px 10px 30px;
-    }
-    footer a {
-      color: #00796b;
-      text-decoration: none;
-      margin: 0 6px;
-    }
-    footer a:hover,
-    footer a:focus {
-      text-decoration: underline;
-    }
-    @media (max-width: 480px) {
-      body {
-        padding: 0 10px;
-      }
-      section {
-        padding: 15px 15px;
-      }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ryan Eaton | Communication & Tech Support</title>
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #80cbc4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  header {
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #000;
+  }
+  .subtitle {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #004d40;
+  }
+  .tagline {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #004d40;
+    margin-left: 0.6rem;
+  }
+  section {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #004d40;
+    margin-bottom: 0.35rem;
+  }
+  section p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: #000;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    color: #004d40;
+    background: #00695c;
+  }
+  footer a {
+    color: #a7ffeb;
+    text-decoration: none;
+    margin: 0 0.35rem;
+  }
+  footer a:hover,
+  footer a:focus {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Ryan Eaton</h1>
-    <div class="subtitle">Communication & Tech Support — Empowering, Clear, Human</div>
-  </header>
-
-  <section>
-    <h2>Communication Support</h2>
-    <p>
-      I help individuals build confidence and clarity in how they express themselves and connect with others. Whether you’re Deaf, neurodiverse, shy, or navigating a noisy world, I provide tailored, one-to-one support—offering practical lipreading tips, body language insights, and introductory BSL. This isn't about theory or scripts; it's about real communication that works for you.
-    </p>
-  </section>
-
-  <section>
-    <h2>Tech Support</h2>
-    <p>
-      Technology can be overwhelming. I offer straightforward, jargon-free support to simplify your digital life whether that's setting up devices, troubleshooting, or helping you take control of your tech environment. With lifelong experience and genuine care, I make technology accessible, approachable, and stress-free. No sales pitches, just honest help.
-    </p>
-  </section>
-
-  <section>
-    <h2>Everyday Support</h2>
-    <p>
-      Sometimes you just need someone dependable, clear-headed, and practical. I provide grounded support to help you tackle day-to-day challenges, understand systems, and gain confidence to speak up or try something new. No jargon, no pressure—just straightforward, effective assistance that fits your life and your pace.
-    </p>
-  </section>
-
+  <main>
+    <header>
+      <h1>Ryan Eaton</h1>
+      <p class="subtitle">
+        Communication & Tech Support
+        <span class="tagline">— Empowering communication, Supporting clarity, Solving problems</span>
+      </p>
+    </header>
+    <section>
+      <h2>Communication Support — Empowering, Clear, Human</h2>
+      <p>
+        I help individuals build confidence and clarity in how they express themselves and connect with others.
+        Whether you're Deaf, neurodiverse, shy, or navigating a noisy world, I provide tailored, one-to-one support—offering practical lipreading tips, body language insights, and introductory BSL.
+        This isn't about theory or scripts; it's about real communication that works for you.
+      </p>
+    </section>
+    <section>
+      <h2>Tech Support — Calm, Friendly, Hassle-Free</h2>
+      <p>
+        Technology can be overwhelming. I offer straightforward, jargon-free support to simplify your digital life whether that's setting up devices, troubleshooting, or helping you take control of your tech environment.
+        With lifelong experience and genuine care, I make technology accessible, approachable, and stress-free.
+        No sales pitches, just honest help.
+      </p>
+    </section>
+    <section>
+      <h2>Everyday Support — Real-World Guidance, Your Way</h2>
+      <p>
+        Sometimes you just need someone dependable, clear-headed, and practical. I provide grounded support to help you tackle day-to-day challenges, understand systems, and gain confidence to speak up or try something new.
+        No jargon, no pressure—just straightforward, effective assistance that fits your life and your pace.
+      </p>
+    </section>
+  </main>
   <footer>
-    <a href="mailto:contact@ryaneaton.co.uk">contact@ryaneaton.co.uk</a> | 
-    <a href="https://www.ryaneaton.co.uk" target="_blank" rel="noopener noreferrer">www.ryaneaton.co.uk</a>
+    <a href="mailto:contact@ryaneaton.co.uk">contact@ryaneaton.co.uk</a> | <a href="https://www.ryaneaton.co.uk" target="_blank" rel="noopener noreferrer">www.ryaneaton.co.uk</a>
   </footer>
 </body>
 </html>
