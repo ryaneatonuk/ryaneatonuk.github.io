@@ -3,91 +3,113 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ryan Eaton - Communication & Tech Support</title>
+<title>Ryan Eaton — Communication & Tech Support</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
   body {
-    font-family: Arial, sans-serif;
-    background-color: #80cbc4;
-    color: #222;
     margin: 0;
-    padding: 0;
+    background-color: #009688;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-  .container {
-    max-width: 700px;
-    margin: 3rem auto 2rem auto;
-    padding: 0 1rem;
+
+  main {
+    flex-grow: 1;
+    padding: 1rem 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
   }
-  h1 {
+
+  header {
+    margin-top: 1rem;
     text-align: center;
+    color: black;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
     margin: 0;
-    color: #000;
-    font-size: 2.5em;
-    margin-bottom: 0.2rem;
   }
-  .header-line {
-    text-align: center;
-    font-size: 1.25em;
+
+  header h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #004d40; /* darker cyan-green */
     font-weight: 600;
-    color: #00796b;
-    margin-bottom: 2rem;
   }
-  .section-box {
-    background-color: #fefcf7;
-    border-radius: 6px;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    margin-bottom: 1.75rem;
-    text-align: left;
+
+  section {
+    background: #fff9f4;
+    border-radius: 8px;
+    padding: 1rem 1.2rem 1.2rem 1.2rem;
+    margin: 1.25rem 0;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
   }
-  h3.section-header {
-    font-size: 1.25em;
-    margin-top: 0;
-    margin-bottom: 0.4rem;
-    color: #00796b;
+
+  section h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.3rem 0;
+    color: #00796b; /* darker teal */
+    font-weight: 700;
   }
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
+
+  section p {
+    margin: 0;
     line-height: 1.5;
   }
+
   footer {
-    font-size: 0.8rem;
-    color: #333;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: #ddd;
+    padding: 0.7rem 0 1rem 0;
+    background-color: #00796b;
   }
+
   footer a {
-    color: #00796b;
+    color: #a7dedf;
     text-decoration: none;
-    margin: 0 0.5rem;
+    margin: 0 0.3rem;
+  }
+
+  footer a:hover,
+  footer a:focus {
+    text-decoration: underline;
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Ryan Eaton</h1>
-    <div class="header-line">Communication & Tech Support — Empowering communication, supporting clarity, solving problems.</div>
+  <main>
+    <header>
+      <h1>Ryan Eaton</h1>
+      <h2>Communication &amp; Tech Support — Empowered, Clear, Human</h2>
+    </header>
 
-    <div class="section-box">
-      <h3 class="section-header">💬 Communication Support — Empowering, Clear, Human</h3>
-      <p>I help individuals build confidence and clarity in how they express themselves and connect with others. Whether you’re Deaf, neurodiverse, shy, or navigating a noisy world, I provide tailored, one-to-one support — offering practical lipreading tips, body language insights, and introductory BSL. This isn’t about theory or scripts; it’s about real communication that works for you.</p>
-    </div>
+    <section>
+      <h3>Communication Support — Compassionate, Clear, Human</h3>
+      <p>💬 I help individuals build confidence and clarity in how they express themselves and connect with others. Whether you’re Deaf, neurodiverse, shy, or navigating a noisy world, I provide tailored, one-to-one support — offering practical lipreading tips, body language insights, and introductory BSL. This isn’t about theory or scripts; it’s about real communication that works for you.</p>
+    </section>
 
-    <div class="section-box">
-      <h3 class="section-header">🖥️ Tech Support — Calm, Friendly, Hassle-Free</h3>
-      <p>Technology can be overwhelming. I offer straightforward, jargon-free support to simplify your digital life — whether that’s setting up devices, troubleshooting, or helping you take control of your tech environment. With lifelong experience and genuine care, I make technology accessible, approachable, and stress-free. No sales pitches, just honest help.</p>
-    </div>
+    <section>
+      <h3>Tech Support — Calm, Friendly, Hassle-Free</h3>
+      <p>🖥️ Technology can be overwhelming. I offer straightforward, jargon-free support to simplify your digital life — whether that’s setting up devices, troubleshooting, or helping you take control of your tech environment. With lifelong experience and genuine care, I make technology accessible, approachable, and stress-free. No sales pitches, just honest help.</p>
+    </section>
 
-    <div class="section-box">
-      <h3 class="section-header">🔧 Everyday Support — Real-World Guidance, Your Way</h3>
-      <p>Sometimes you just need someone dependable, clear-headed, and practical. I provide grounded support to help you tackle day-to-day challenges, understand systems, and gain confidence to speak up or try something new. No jargon, no pressure — just straightforward, effective assistance that fits your life and your pace.</p>
-    </div>
+    <section>
+      <h3>Everyday Support — Real-World Guidance, Your Way</h3>
+      <p>🔧 Sometimes you just need someone dependable, clear-headed, and practical. I provide grounded support to help you tackle day-to-day challenges, understand systems, and gain confidence to speak up or try something new. No jargon, no pressure — just straightforward, effective assistance that fits your life and your pace.</p>
+    </section>
+  </main>
 
-    <footer>
+  <footer>
+    <p>
       <a href="mailto:contact@ryaneaton.co.uk">contact@ryaneaton.co.uk</a> | 
       <a href="https://www.ryaneaton.co.uk" target="_blank" rel="noopener noreferrer">www.ryaneaton.co.uk</a>
-    </footer>
-  </div>
+    </p>
+  </footer>
 </body>
 </html>
