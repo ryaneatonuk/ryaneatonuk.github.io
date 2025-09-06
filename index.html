@@ -40,6 +40,29 @@
     font-weight: 600;
     margin-top: 0.1rem;
   }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  nav a {
+    display: block;
+    background: var(--box-bg);
+    color: var(--green-text);
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  nav a:hover {
+    background: var(--green-text);
+    color: #fffefa;
+  }
+  nav a.active {
+    background: var(--green-text);
+    color: #fffefa;
+  }
   section {
     background: var(--box-bg);
     border-radius: 10px;
@@ -104,6 +127,12 @@
       <div class="subtitle">Communication &amp; Tech Support Specialist — Empowering communication, Supporting clarity, Solving problems.</div>
     </header>
 
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="philosophy.html">My Philosophy</a>
+    </nav>
+
     <section>
       <h2>Communication Support — Compassionate, Clear, Human</h2>
       <p><strong>I help you build confidence in how you express yourself and connect with others.</strong> Whether you’re Deaf, neurodiverse, or just feeling lost in the noise, I offer practical lipreading tips, body language insights, and basic BSL — real communication that works for you.</p>
@@ -121,13 +150,14 @@
 
     <section>
       <h2>Digital Literacy — Online Confidence, Real Life Skills</h2>
-      <p><strong>The Internet should work for you, not against you.</strong> I offer clear, practical support to help you stay safer online, recognise scams, manage your privacy, and build healthier digital habits. Whether you're feeling unsure or want to sharpen your awareness, I'll guide you through it in a way that's calm, respectful and easy to understand. </p>
+      <p><strong>The Internet should work for you, not against you.</strong> I offer clear, practical support to help you stay safer online, recognise scams, manage your privacy, and build healthier digital habits. Whether you're feeling unsure or want to sharpen your awareness, I'll guide you through it in a way that's calm, respectful and easy to understand.</p>
     </section>
-   
+
     <section>
       <h2>The Bridge Between Worlds</h2>
       <p><strong>Like the Bifröst of Norse legend - the shining bridge between realms - my work connects worlds that rarely meet.</strong> I move fluently between hearing and deaf perspectives, technical and human needs, complexity and clarity.</p>
       <p>Where others see barriers, I see connections. I act as the conduit, ensuring understanding flows both ways: translating technology into plain English, turning communication challenges into opportunities, and making digital spaces accessible to all.</p>
+      <p>My career spans IT infrastructure, accessibility consulting, construction, and education, giving me rare insight into how people and systems interact and how to make them work better together. I bring a unique blend of IT expertise, communication skills, and accessibility awareness. My experience includes digital literacy training, deaf education support, and hands-on technical problem-solving. Exceptional visual communication and pattern recognition skills enhance both my technical and people-focused work.</p>
       <p>I don’t fit into one box - I build the bridges between them.</p>
     </section>
 
@@ -144,7 +174,7 @@
 
       <h3>Clarity</h3>
       <ul>
-        <li>Digital Skills &amp; AI Guidance</li>
+        <li>Digital Skills &amp; AI Assistance</li>
         <li>Assistive Technology Guidance</li>
       </ul>
 
@@ -161,4 +191,5 @@
   </div>
 </body>
 </html>
+
 
