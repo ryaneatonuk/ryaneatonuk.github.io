@@ -14,7 +14,6 @@
     --text-color: #222222;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-
   body {
     margin: 0;
     background-color: var(--bg-color);
@@ -22,31 +21,25 @@
     color: var(--text-color);
     line-height: 1.5;
   }
-
   .container {
     max-width: 720px;
     margin: 1.5rem auto 2rem auto;
     padding: 0 1rem;
   }
-
   header {
     text-align: center;
     margin-bottom: 0.5rem;
   }
-
-  /* FORCE GREEN HEADER */
   header h1 {
     font-size: 2.1rem;
     margin: 0;
-    color: var(--green-text) !important;
+    color: var(--green-text);
   }
-
   nav {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
   }
-
   nav a {
     display: block;
     background: var(--box-bg);
@@ -57,36 +50,30 @@
     margin-bottom: 0.5rem;
     font-weight: 600;
   }
-
-  nav a:hover,
+  nav a:hover {
+    background: var(--green-text);
+    color: #fffefa;
+  }
   nav a.active {
     background: var(--green-text);
     color: #fffefa;
   }
-
   section {
     background: var(--box-bg);
     border-radius: 10px;
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
   }
-
   section p {
     font-size: 1rem;
     margin: 0.5rem 0;
   }
-
   section p strong {
     font-weight: 700;
   }
-
   @media (max-width: 480px) {
-    header h1 {
-      font-size: 1rem;
-    }
-    section p {
-      font-size: 0.8rem;
-    }
+    header h1 { font-size: 1rem; }
+    section p { font-size: 0.8rem; }
   }
 </style>
 </head>
