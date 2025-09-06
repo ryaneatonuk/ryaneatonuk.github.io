@@ -25,20 +25,37 @@
     max-width: 720px;
     margin: 1.5rem auto 2rem auto;
     padding: 0 1rem;
+    text-align: center;
   }
   header {
-    text-align: center;
     margin-bottom: 1rem;
   }
   h1 {
     font-size: 2rem;
     margin: 0;
   }
+  .button-container {
+    margin: 1rem 0 2rem 0;
+  }
+  .button-container a {
+    display: inline-block;
+    background: var(--green-text);
+    color: var(--box-bg);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 0 0.5rem;
+  }
+  .button-container a:hover {
+    background: #004d40;
+  }
   section {
     background: var(--box-bg);
     border-radius: 10px;
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
+    text-align: left;
   }
   section p {
     font-size: 1rem;
@@ -58,13 +75,27 @@
   footer a:hover {
     text-decoration: underline;
   }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    section p {
+      font-size: 0.9rem;
+    }
+  }
 </style>
 </head>
 <body>
+
   <div class="container">
     <header>
       <h1>My Philosophy</h1>
     </header>
+
+    <div class="button-container">
+      <a href="about.html">About Me</a>
+      <a href="philosophy.html">My Philosophy</a>
+    </div>
 
     <section>
       <p><strong>The Manifesto of Resplendent Realness</strong></p>
@@ -90,5 +121,6 @@
       <p><a href="index.html">Back to Home</a></p>
     </footer>
   </div>
+
 </body>
 </html>
