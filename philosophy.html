@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Ryan Eaton’s philosophy and manifesto." />
+<title>My Philosophy | Ryan Eaton</title>
+<link rel="icon" href="favicon.png" type="image/png" />
+<style>
+  :root {
+    --bg-color: #B0DFDB;
+    --box-bg: #fffefa;
+    --green-text: #00796b;
+    --text-color: #222222;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.5;
+    display: flex;
+  }
+  .sidebar {
+    width: 180px;
+    background: var(--box-bg);
+    padding: 1rem;
+    border-right: 2px solid var(--green-text);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .sidebar a {
+    display: block;
+    padding: 0.6rem;
+    background: var(--green-text);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .sidebar a:hover {
+    background: #005f52;
+  }
+  .container {
+    max-width: 720px;
+    margin: 1.5rem auto 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin: 0;
+  }
+  section {
+    background: var(--box-bg);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+  section h2 {
+    color: var(--green-text);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  footer a {
+    color: var(--green-text);
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+    .sidebar {
+      flex-direction: row;
+      justify-content: center;
+      border-right: none;
+      border-bottom: 2px solid var(--green-text);
+    }
+  }
+</style>
+</head>
+<body>
+  <nav class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="philosophy.html">My Philosophy</a>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>My Philosophy</h1>
+    </header>
+
+    <section>
+      <h2>Manifesto</h2>
+      <p><strong>Empowering communication. Supporting clarity. Solving problems.</strong></p>
+      <p>I believe communication is more than words — it’s about connection, respect, and understanding. Technology should make life easier, not harder. And clarity is something everyone deserves.</p>
+      <p>My philosophy is simple: meet people where they are, build bridges between worlds, and leave people feeling stronger, calmer, and more confident than before.</p>
+    </section>
+
+    <section>
+      <h2>How I Work</h2>
+      <ul>
+        <li>Listening first — always starting with what matters most to you</li>
+        <li>Making complexity simple and stress-free</li>
+        <li>Honest, compassionate support with no judgment</li>
+        <li>Empowering people to take control, not depend on me</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Questions? <a href="mailto:contact@ryaneaton.co.uk">Get in touch here!</a></p>
+    </footer>
+  </div>
+</body>
+</html>
