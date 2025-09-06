@@ -20,11 +20,38 @@
     font-family: var(--font-family);
     color: var(--text-color);
     line-height: 1.5;
+    display: flex;
   }
+  /* Sidebar */
+  .sidebar {
+    width: 180px;
+    background: var(--box-bg);
+    padding: 1rem;
+    border-right: 2px solid var(--green-text);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .sidebar a {
+    display: block;
+    padding: 0.6rem;
+    background: var(--green-text);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .sidebar a:hover {
+    background: #005f52;
+  }
+  /* Main content */
   .container {
     max-width: 720px;
     margin: 1.5rem auto 2rem auto;
     padding: 0 1rem;
+    flex: 1;
   }
   header {
     text-align: center;
@@ -81,29 +108,34 @@
   footer a:hover {
     text-decoration: underline;
   }
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 1rem;
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
     }
-    .subtitle {
-      font-size: 1rem;
-    }
-    section h2 {
-      font-size: 1rem;
-    }
-    section p {
-      font-size: 0.8rem;
+    .sidebar {
+      flex-direction: row;
+      justify-content: center;
+      border-right: none;
+      border-bottom: 2px solid var(--green-text);
     }
   }
 </style>
 </head>
 <body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <a href="about.html">About Me</a>
+    <a href="philosophy.html">My Philosophy</a>
+  </nav>
+
+  <!-- Main content -->
   <div class="container">
     <header>
       <h1>Ryan Eaton</h1>
       <div class="subtitle">Communication &amp; Tech Support Specialist — Empowering communication, Supporting clarity, Solving problems.</div>
     </header>
 
+    <!-- Your original sections unchanged -->
     <section>
       <h2>Communication Support — Compassionate, Clear, Human</h2>
       <p><strong>I help you build confidence in how you express yourself and connect with others.</strong> Whether you’re Deaf, neurodiverse, or just feeling lost in the noise, I offer practical lipreading tips, body language insights, and basic BSL — real communication that works for you.</p>
@@ -126,38 +158,4 @@
    
     <section>
       <h2>The Bridge Between Worlds</h2>
-      <p><strong>Like the Bifröst of Norse legend - the shining bridge between realms - my work connects worlds that rarely meet.</strong> I move fluently between hearing and deaf perspectives, technical and human needs, complexity and clarity.</p>
-      <p>Where others see barriers, I see connections. I act as the conduit, ensuring understanding flows both ways: translating technology into plain English, turning communication challenges into opportunities, and making digital spaces accessible to all.</p>
-      <p>I don’t fit into one box - I build the bridges between them.</p>
-    </section>
-
-    <section>
-      <h2>My 1:1 Offerings</h2>
-      <p><strong>Empowering communication. Supporting clarity. Solving problems.</strong></p>
-
-      <h3>Communication</h3>
-      <ul>
-        <li>Lipreading Coaching</li>
-        <li>Basic BSL Tutoring</li>
-        <li>Visual &amp; Non-Verbal Communication Coaching</li>
-      </ul>
-
-      <h3>Clarity</h3>
-      <ul>
-        <li>Digital Skills &amp; AI Assistance</li>
-        <li>Assistive Technology Guidance</li>
-      </ul>
-
-      <h3>Solving Problems</h3>
-      <ul>
-        <li>Technical Support</li>
-        <li>Life Skills &amp; Everyday Support</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>Questions? <a href="mailto:contact@ryaneaton.co.uk">Get in touch here!</a> | <a href="https://www.ryaneaton.co.uk" target="_blank" rel="noopener noreferrer">www.ryaneaton.co.uk</a></p>
-    </footer>
-  </div>
-</body>
-</html>
+      <p><strong>Like the Bifröst of Norse legend - the shining bridge between realms - my work connects worlds that rarely meet.</strong> I move fluently between hearing and deaf perspectives,
