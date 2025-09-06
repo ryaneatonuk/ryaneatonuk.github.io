@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Ryan Eaton — About Me. Communication, clarity, and problem-solving in 1:1 support." />
-<title>About Me | Ryan Eaton</title>
+<meta name="description" content="Ryan Eaton — Communication & Tech Support Specialist. 1:1 support in lipreading, BSL, digital literacy, IT help, and everyday guidance." />
+<title>Ryan Eaton | About Me</title>
 <link rel="icon" href="favicon.png" type="image/png" />
 <style>
   :root {
@@ -33,6 +33,12 @@
   h1 {
     font-size: 2.1rem;
     margin: 0;
+  }
+  .subtitle {
+    font-size: 1rem;
+    color: var(--green-text);
+    font-weight: 600;
+    margin-top: 0.1rem;
   }
   nav {
     display: flex;
@@ -63,36 +69,74 @@
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
   }
+  section h2 {
+    color: var(--green-text);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
   section p {
     font-size: 1rem;
-    margin: 0.5rem 0;
+    margin: 0 0 0.8rem 0;
+  }
+  p strong {
+    font-weight: 700;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  footer a {
+    color: var(--green-text);
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
   }
   @media (max-width: 480px) {
-    h1 { font-size: 1rem; }
-    section p { font-size: 0.8rem; }
+    h1 {
+      font-size: 1rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    section h2 {
+      font-size: 1rem;
+    }
+    section p {
+      font-size: 0.8rem;
+    }
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>About Me</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Ryan Eaton</h1>
+      <div class="subtitle">Communication &amp; Tech Support Specialist — Empowering communication, Supporting clarity, Solving problems.</div>
+    </header>
 
-  <!-- Nav matches index.html style exactly -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About Me</a>
-    <a href="philosophy.html">My Philosophy</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="philosophy.html">My Philosophy</a>
+    </nav>
 
-  <section>
-    <p>I’m not a specialist in one narrow box — I’m a whole human being.</p>
-    <p>My work rests on three pillars: Communication, Clarity, and Problem-Solving.</p>
-    <p>For too long, I was asked to be a screwdriver when I’m really a Swiss Army knife: versatile, adaptable, and designed to connect people, technology, and ideas.</p>
-    <p>When you work with me, you don’t just get someone who can teach BSL, guide digital skills, or fix technical issues. You get someone who sees the bigger picture — and helps turn complexity into clarity, overwhelm into calm, and problems into solutions.</p>
-    <p>This isn’t just what I do. It’s who I am.</p>
-  </section>
-</div>
+    <section>
+      <h2>About Me</h2
+      <p><strong>My work rests on three pillars:</strong> Communication, Clarity, and Problem-Solving.</p>
+      <p>For too long, I was asked to be a <strong>screwdriver</strong> when I’m really a <strong>Swiss Army knife</strong>: versatile, adaptable, and designed to connect people, technology, and ideas.</p>
+      <p>When you work with me, you don’t just get someone who can teach BSL, guide digital skills, or fix technical issues. <strong>You get someone who sees the bigger picture — and helps turn complexity into clarity, overwhelm into calm, and problems into solutions.</strong></p>
+      <p><strong>This isn’t just what I do. It’s who I am.</strong></p>
+    </section>
+
+    <footer>
+      <p>Questions? <a href="mailto:contact@ryaneaton.co.uk">Get in touch here!</a> | <a href="https://www.ryaneaton.co.uk" target="_blank" rel="noopener noreferrer">www.ryaneaton.co.uk</a></p>
+    </footer>
+  </div>
 </body>
 </html>
