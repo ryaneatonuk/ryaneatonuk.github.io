@@ -30,10 +30,16 @@
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  header h1 {
+  h1 {
     font-size: 2.1rem;
     margin: 0;
     color: var(--green-text);
+  }
+  .subtitle {
+    font-size: 1rem;
+    color: var(--green-text);
+    font-weight: 600;
+    margin-top: 0.1rem;
   }
   nav {
     display: flex;
@@ -64,41 +70,77 @@
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
   }
+  section h2 {
+    color: var(--green-text);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
   section p {
     font-size: 1rem;
-    margin: 0.5rem 0;
+    margin: 0 0 0.8rem 0;
   }
-  section p strong {
+  p strong {
     font-weight: 700;
   }
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  footer a {
+    color: var(--green-text);
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
   @media (max-width: 480px) {
-    header h1 { font-size: 1rem; }
-    section p { font-size: 0.8rem; }
+    h1 {
+      font-size: 1rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    section h2 {
+      font-size: 1rem;
+    }
+    section p {
+      font-size: 0.8rem;
+    }
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>My Philosophy</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Ryan Eaton</h1>
+      <div class="subtitle">Communication &amp; Tech Support Specialist — Empowering communication, Supporting clarity, Solving problems.</div>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="philosophy.html" class="active">My Philosophy</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="philosophy.html" class="active">My Philosophy</a>
+    </nav>
 
-  <section>
-    <p><strong>My Philosophy</strong></p>
-    <p>I am not a specialist in the narrow sense of the word. I am a whole human being — analytical, creative, and practical — and I refuse to amputate parts of myself to fit someone else’s job description.</p>
-    <p>For too long, I was asked to be a screwdriver when I am, in truth, a Swiss Army knife. Versatile. Multifunctional. Designed to connect, adapt, and solve problems in ways a single tool never could.</p>
-    <p>My work rests on three unshakable pillars: Communication. Clarity. Problem-Solving.</p>
-    <p>They are not business categories — they are my operating system. They are how my mind has always worked, seamlessly, all at once.</p>
-    <p>This is not just a service. It is a philosophy of wholeness. I don’t divide people into boxes, and I don’t divide myself. When you work with me, you don’t just get someone who can teach lipreading, guide you through digital skills, or fix a technical issue. You get someone who sees the connections — between technology and humanity, between overwhelm and calm, between confusion and confidence.</p>
-    <p>I believe the future belongs to the multifaceted. To those who stop apologising for their complexity. To those who align their inner wiring with their outer work. To those who embrace their resplendent realness.</p>
-    <p>This is not about fitting in. This is about standing whole. And when you work with me, you don’t just get solutions — you get the full spectrum of who I am, working in harmony to help you move forward.</p>
-  </section>
-</div>
+    <section>
+      <h2>My Philosophy</h2>
+      <p>I am not a specialist in the narrow sense of the word. I am a whole human being — analytical, creative, and practical — and I refuse to amputate parts of myself to fit someone else's job description.</p>
+      <p>For too long, I was asked to be a screwdriver when I am, in truth, a Swiss Army knife. Versatile. Multifunctional. Designed to connect, adapt, and solve problems in ways a single tool never could.</p>
+      <p>My work rests on three unshakable pillars: Communication. Clarity. Problem-Solving.</p>
+      <p>They are not business categories — they are my operating system. They are how my mind has always worked, seamlessly, all at once.</p>
+      <p>This is not just a service. It is a philosophy of wholeness. I don't divide people into boxes, and I don't divide myself. When you work with me, you don't just get someone who can teach lipreading, guide you through digital skills, or fix a technical issue. You get someone who sees the connections — between technology and humanity, between overwhelm and calm, between confusion and confidence.</p>
+      <p>I believe the future belongs to the multifaceted. To those who stop apologising for their complexity. To those who align their inner wiring with their outer work. To those who embrace their resplendent realness.</p>
+      <p><strong>This is not about fitting in. This is about standing whole. And when you work with me, you don't just get solutions — you get the full spectrum of who I am, working in harmony to help you move forward.</strong></p>
+    </section>
+
+    <footer>
+      <p>Questions? <a href="mailto:contact@ryaneaton.co.uk">Get in touch here!</a> | <a href="https://www.ryaneaton.co.uk" target="_blank" rel="noopener noreferrer">www.ryaneaton.co.uk</a></p>
+    </footer>
+  </div>
 </body>
 </html>
