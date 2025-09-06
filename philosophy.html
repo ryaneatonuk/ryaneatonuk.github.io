@@ -34,39 +34,42 @@
     font-size: 2.1rem;
     margin: 0;
   }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  nav a {
+    display: block;
+    background: var(--box-bg);
+    color: var(--green-text);
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  nav a:hover {
+    background: var(--green-text);
+    color: #fffefa;
+  }
+  nav a.active {
+    background: var(--green-text);
+    color: #fffefa;
+  }
   section {
     background: var(--box-bg);
     border-radius: 10px;
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
   }
-  section h2 {
-    color: var(--green-text);
-    font-weight: 600;
-    font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
   section p {
     font-size: 1rem;
     margin: 0.5rem 0;
   }
-  .buttons {
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-  .button {
-    display: inline-block;
-    background: var(--green-text);
-    color: #fffefa;
-    text-decoration: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    margin: 0 0.5rem;
-  }
-  .button:hover {
-    background: #004d40;
+  @media (max-width: 480px) {
+    h1 { font-size: 1rem; }
+    section p { font-size: 0.8rem; }
   }
 </style>
 </head>
@@ -75,6 +78,12 @@
   <header>
     <h1>My Philosophy</h1>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="philosophy.html" class="active">My Philosophy</a>
+  </nav>
 
   <section>
     <p><strong>The Manifesto of Resplendent Realness</strong></p>
@@ -86,11 +95,6 @@
     <p>I believe the future belongs to the multifaceted. To those who stop apologizing for their complexity. To those who align their inner wiring with their outer work. To those who embrace their resplendent realness.</p>
     <p>This is not about fitting in. This is about standing whole. And when you work with me, you don’t just get solutions — you get the full spectrum of who I am, working in harmony to help you move forward.</p>
   </section>
-
-  <div class="buttons">
-    <a href="index.html" class="button">Home</a>
-    <a href="about.html" class="button">About Me</a>
-  </div>
 </div>
 </body>
 </html>
