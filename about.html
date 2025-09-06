@@ -34,39 +34,42 @@
     font-size: 2.1rem;
     margin: 0;
   }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  nav a {
+    display: block;
+    background: var(--box-bg);
+    color: var(--green-text);
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  nav a:hover {
+    background: var(--green-text);
+    color: #fffefa;
+  }
+  nav a.active {
+    background: var(--green-text);
+    color: #fffefa;
+  }
   section {
     background: var(--box-bg);
     border-radius: 10px;
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
   }
-  section h2 {
-    color: var(--green-text);
-    font-weight: 600;
-    font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
   section p {
     font-size: 1rem;
     margin: 0.5rem 0;
   }
-  .buttons {
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-  .button {
-    display: inline-block;
-    background: var(--green-text);
-    color: #fffefa;
-    text-decoration: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    margin: 0 0.5rem;
-  }
-  .button:hover {
-    background: #004d40;
+  @media (max-width: 480px) {
+    h1 { font-size: 1rem; }
+    section p { font-size: 0.8rem; }
   }
 </style>
 </head>
@@ -76,6 +79,12 @@
     <h1>About Me</h1>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Me</a>
+    <a href="philosophy.html">My Philosophy</a>
+  </nav>
+
   <section>
     <p>I’m not a specialist in one narrow box — I’m a whole human being.</p>
     <p>My work rests on three pillars: Communication, Clarity, and Problem-Solving.</p>
@@ -83,11 +92,6 @@
     <p>When you work with me, you don’t just get someone who can teach BSL, guide digital skills, or fix technical issues. You get someone who sees the bigger picture — and helps turn complexity into clarity, overwhelm into calm, and problems into solutions.</p>
     <p>This isn’t just what I do. It’s who I am.</p>
   </section>
-
-  <div class="buttons">
-    <a href="index.html" class="button">Home</a>
-    <a href="philosophy.html" class="button">My Philosophy</a>
-  </div>
 </div>
 </body>
 </html>
