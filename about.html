@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="About Ryan Eaton — Communication & Tech Support Specialist." />
-<title>About Me | Ryan Eaton</title>
+<meta name="description" content="Ryan Eaton — About Me" />
+<title>Ryan Eaton | About Me</title>
 <link rel="icon" href="favicon.png" type="image/png" />
 <style>
   :root {
@@ -20,57 +20,46 @@
     font-family: var(--font-family);
     color: var(--text-color);
     line-height: 1.5;
-    display: flex;
-  }
-  .sidebar {
-    width: 180px;
-    background: var(--box-bg);
-    padding: 1rem;
-    border-right: 2px solid var(--green-text);
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  .sidebar a {
-    display: block;
-    padding: 0.6rem;
-    background: var(--green-text);
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.2s;
-  }
-  .sidebar a:hover {
-    background: #005f52;
   }
   .container {
     max-width: 720px;
     margin: 1.5rem auto 2rem auto;
     padding: 0 1rem;
-    flex: 1;
+    text-align: center;
   }
   header {
-    text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin: 0;
+  }
+  .button-container {
+    margin: 1rem 0 2rem 0;
+  }
+  .button-container a {
+    display: inline-block;
+    background: var(--green-text);
+    color: var(--box-bg);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 0 0.5rem;
+  }
+  .button-container a:hover {
+    background: #004d40;
   }
   section {
     background: var(--box-bg);
     border-radius: 10px;
     padding: 1rem 1.5rem;
     margin-bottom: 1.3rem;
+    text-align: left;
   }
-  section h2 {
-    color: var(--green-text);
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+  section p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
   }
   footer {
     text-align: center;
@@ -86,49 +75,40 @@
   footer a:hover {
     text-decoration: underline;
   }
-  @media (max-width: 768px) {
-    body {
-      flex-direction: column;
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
     }
-    .sidebar {
-      flex-direction: row;
-      justify-content: center;
-      border-right: none;
-      border-bottom: 2px solid var(--green-text);
+    section p {
+      font-size: 0.9rem;
     }
   }
 </style>
 </head>
 <body>
-  <nav class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="philosophy.html">My Philosophy</a>
-  </nav>
 
   <div class="container">
     <header>
       <h1>About Me</h1>
     </header>
 
-    <section>
-      <h2>Who I Am</h2>
-      <p>I’m Ryan Eaton, a Communication & Tech Support Specialist. I bring together human warmth with technical expertise, helping people feel more confident and in control in their everyday lives.</p>
-    </section>
+    <div class="button-container">
+      <a href="about.html">About Me</a>
+      <a href="philosophy.html">My Philosophy</a>
+    </div>
 
     <section>
-      <h2>What I Do</h2>
-      <p>I support people 1:1 in three main areas: communication, clarity, and problem-solving. Whether it’s lipreading, BSL, digital literacy, or navigating systems, I focus on making things accessible and stress-free.</p>
-    </section>
-
-    <section>
-      <h2>Why It Matters</h2>
-      <p>I believe in empowering communication, supporting clarity, and solving problems. My work connects worlds that don’t often meet — Deaf and hearing, human and tech, simple and complex — always with compassion and clarity.</p>
+      <p>I’m not a specialist in one narrow box — I’m a whole human being.</p>
+      <p>My work rests on three pillars: <strong>Communication, Clarity, and Problem-Solving.</strong></p>
+      <p>For too long, I was asked to be a screwdriver when I’m really a Swiss Army knife: versatile, adaptable, and designed to connect people, technology, and ideas.</p>
+      <p>When you work with me, you don’t just get someone who can teach BSL, guide digital skills, or fix technical issues. You get someone who sees the bigger picture — and helps turn complexity into clarity, overwhelm into calm, and problems into solutions.</p>
+      <p>This isn’t just what I do.<br>It’s who I am.</p>
     </section>
 
     <footer>
-      <p>Questions? <a href="mailto:contact@ryaneaton.co.uk">Get in touch here!</a></p>
+      <p><a href="index.html">Back to Home</a></p>
     </footer>
   </div>
+
 </body>
 </html>
